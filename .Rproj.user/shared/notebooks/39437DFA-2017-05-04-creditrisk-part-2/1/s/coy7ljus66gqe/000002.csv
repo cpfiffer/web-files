@@ -1,0 +1,3 @@
+"0","table(test$loan_status, predicted$net.result)"
+"2","Error in predicted$net.result : $ operator is invalid for atomic vectors
+"

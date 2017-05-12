@@ -1,0 +1,6 @@
+"0","# Convert everything into numbers. "
+"0","# For credit score, A = 1, B = 2, etc."
+"0","data$grade <- as.numeric(data$grade)"
+"0","# For home ownership: Mortgage = 1, Other = 2, Own = 3, Rent = 4."
+"0","data$home_ownership <- as.numeric(data$home_ownership)"
+"0","head(data)"

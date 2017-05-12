@@ -1,0 +1,12 @@
+"0","# We want the names of all the features that aren't loan_status, hence the 1:7."
+"0","features <- names(scaled[,1:7])"
+"0","# Concatenate strings"
+"0","f <- paste(features,collapse=' + ')"
+"0","f <- paste('loan_status ~',f)"
+"0","# Convert to formula"
+"0","f <- as.formula(f)"
+"0","f"
+"1","loan_status ~ loan_amnt + int_rate + grade + emp_length + home_ownership + 
+"
+"1","    annual_inc + age
+"

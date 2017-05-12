@@ -1,0 +1,43 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Cameron Pfiffer's Blog"
+theme = "ghostwriter"
+copyright = "Cameron Pfiffer"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", ".rds"]
+
+[Author]
+    name = "Cameron Pfiffer"
+    profile = "https://www.linkedin.com/in/cameron-pfiffer-b4196b55/"
+
+[permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+[[menu.main]]
+    name = "About"
+    url = "/about"
+
+
+[params]
+    intro = true
+    headline = "Homepage"
+    github = "https://github.com/cpfiffer"
+    linkedin = "https://www.linkedin.com/in/cameron-pfiffer-b4196b55/"
+    twitter = "https://twitter.com/CameronPfiffer"
+    email = "cpfiffer@gmail.com"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = true
+    shareLinkedIn = false
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.10.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"

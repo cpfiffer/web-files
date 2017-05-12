@@ -1,0 +1,14 @@
+"0","#system.time(nn <- neuralnet(f, train, hidden = c(10,10,10), linear.output = FALSE, "
+"0","#                            algorithm = 'backprop', learningrate = 1, rep = 10))"
+"0","nn <- nnet(loan_status ~ ., data = train, size = 15)"
+"1","# weights: "
+"1"," "
+"1","136"
+"1","
+"
+"1","initial  value 5383.663679 
+"
+"1","final  value 2114.000000 
+"
+"1","converged
+"

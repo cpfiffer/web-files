@@ -1,0 +1,13 @@
+{
+    "path" : "C:/Users/cpfif/Documents/blogdown/web/content/post",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 1
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
