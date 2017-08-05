@@ -3,8 +3,8 @@ title: I made a newspaper
 author: Cameron Pfiffer
 date: '2017-05-01'
 slug: ''
-categories: []
-tags: []
+categories: ["Writing"]
+tags: ["Journalism"]
 description: ''
 ---
 

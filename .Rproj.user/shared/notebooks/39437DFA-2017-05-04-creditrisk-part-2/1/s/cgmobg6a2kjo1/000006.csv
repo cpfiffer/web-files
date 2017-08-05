@@ -1,3 +1,0 @@
-"0","#Filter out rows with any NAs."
-"0","data <- data[complete.cases(data),]"
-"0","head(data)"

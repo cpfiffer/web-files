@@ -3,8 +3,8 @@ title: Introduction
 author: Cameron Pfiffer
 date: '2017-04-30'
 slug: ''
-categories: []
-tags: []
+categories: ["General"]
+tags: ["Web"]
 ---
 
 Hello! I've just finished building this site with Hugo and [`blogdown`](https://github.com/rstudio/blogdown), an excellent R package built up by the folks at RStudio. The first iteration of this site is being hosted by [zeit](https://zeit.co/now), a super interesting cloud company. Deployment takes about a minute, unlike the absolute nightmare that is Google Cloud. They take Dockerfiles as well, something that I haven't had any experience with until lately. 

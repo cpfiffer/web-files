@@ -1,6 +1,0 @@
-"0","# Now we check the test set, and round the estimated values up or down."
-"0","threshold = 0.2"
-"0","predicted <- predict(nn, test)"
-"0","#predicted$net.result <- sapply(predicted$net.result,round,digits=0)"
-"0","#predicted$net.result <- sapply(predicted$net.result, "
-"0","                               #function(x) {ifelse(x > threshold, 1, 0)})"

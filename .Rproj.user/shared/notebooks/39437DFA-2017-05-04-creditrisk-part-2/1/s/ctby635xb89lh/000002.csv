@@ -1,6 +1,0 @@
-"0","#Split data into a random 75/25 split of train/test datasets"
-"0","set.seed(900)"
-"0","bound <- floor((nrow(scaled)/4)*3)"
-"0","scaled <- scaled[sample(nrow(scaled)),]"
-"0","train <- scaled[1:bound,]"
-"0","test <- scaled[(bound+1):nrow(scaled),]"

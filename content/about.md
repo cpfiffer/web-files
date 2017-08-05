@@ -1,6 +1,8 @@
 ---
 title: "About"
 date: '2016-05-05T21:48:51-07:00'
+categories: ["General"]
+tags: ["Me"]
 ---
 
 __I'm looking for work! If you need a financial analyst, data scientist, or just a quick learner, you can contact me at [cpfiffer@gmail.com](mailto:cpfiffer@gmail.com).__

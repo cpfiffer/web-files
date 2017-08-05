@@ -3,8 +3,8 @@ title: Federal Funds Hike
 author: Cameron Pfiffer
 date: '2017-04-16'
 slug: ''
-categories: []
-tags: []
+categories: ["Writing"]
+tags: ["Finance", "Interest Rates"]
 description: ''
 ---
 

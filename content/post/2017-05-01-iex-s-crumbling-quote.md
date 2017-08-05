@@ -1,10 +1,10 @@
 ---
 title: IEX's Crumbling Quote
-author: ~
+author: Cameron Pfiffer
 date: '2017-04-16'
 slug: ''
-categories: []
-tags: []
+categories: ["Writing"]
+tags: ["Microstructure", "Finance", "Journalism"]
 description: ''
 ---
 
@@ -20,4 +20,4 @@ Crumbling quotes refer to when the number of exchanges on the national best bid 
 
 The working paper is fascinating, as Bishop demonstrates IEX’s approach to predicting when a crumbling quote is likely to occur, and allowing orders pegged to the midpoint to exercise discretion when IEX’s “signal” is on. Their new rule was approved by the SEC for use in production, though it has yet to be fully installed exchange-wide.
 
-IEX has been at the forefront of protecting its client’s interests, and this is simply the next step at the frontier of combating high frequency traders and other technologically advanced market participants. IEX has a powerful advantage over market predators, and that is that it – along with other exchanges – has access to both a greater quantity and quality of data that traders would usually have to pay thousands of dollars a month for. It will certainly be interesting to watch the development and competition between IEX and those it tries to protect its clients from. 
+IEX has been at the forefront of protecting its client’s interests, and this is simply the next step at the frontier of combating high frequency traders and other technologically advanced market participants. IEX has a powerful advantage over market predators, and that is that it – along with other exchanges – has access to both a greater quantity and quality of data that traders would usually have to pay thousands of dollars a month for. It will certainly be interesting to watch the development and competition between IEX and those it tries to protect its clients from.
