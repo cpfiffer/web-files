@@ -1,43 +1,56 @@
 baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
-title = "Cameron Pfiffer's Blog"
-theme = "ghostwriter"
+title = "Cameron Pfiffer"
+theme = "hyde"
 copyright = "Cameron Pfiffer"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", ".rds"]
-
-[Author]
-    name = "Cameron Pfiffer"
-    profile = "https://www.linkedin.com/in/cameron-pfiffer-b4196b55/"
-
-[permalinks]
-    post = "/:year/:month/:day/:filename/"
-
-[[menu.main]]
-    name = "Home"
-    url = "/"
-[[menu.main]]
-    name = "About"
-    url = "/about"
-
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", ".rds", ".csv"]
 
 [params]
+    themeColor = "theme-base-0d"
     intro = true
-    headline = "Homepage"
+    AuthorName = "Cameron Pfiffer"
     github = "https://github.com/cpfiffer"
     linkedin = "https://www.linkedin.com/in/cameron-pfiffer-b4196b55/"
     twitter = "https://twitter.com/CameronPfiffer"
     email = "cpfiffer@gmail.com"
-    opengraph = true
-    shareTwitter = true
-    shareFacebook = true
-    shareGooglePlus = true
-    shareLinkedIn = false
+    SocialLinks = true
+    TwitterUsername = "CameronPfiffer"
+    GithubUsername = "cpfiffer"
+    description = "R, finance, programming, writing."
+    dateFormat = "Jan 2, 2006"
+    copyrightOwner = "Cameron Pfiffer"
+    copyrightStartYear = "2017"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
     highlightjsCDN = "//cdn.bootcss.com"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
+    
+[author]
+  name = "Cameron"
+    
+[author.social]
+  github = "cpfiffer"
+  twitter = "CameronPfiffer"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+    
+[permalinks]
+  page = "/:slug/"
+  
+[[menu.main]]
+  name = "About"
+  weight = -70
+  identifier = "about"
+  url = "/about/index.html"
+  
+[[menu.main]]
+    Name = "Posts"
+    Title = "Show list of posts"
+    URL = "/post"
