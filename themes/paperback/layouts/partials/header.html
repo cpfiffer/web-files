@@ -2,7 +2,7 @@
   <h1>{{ .Title }}</h1>
 
   {{ if ne .IsNode true }}
-  <time datetime="{{ .Date }}">{{ dateFormat "2006/01/02" .Date }}</time>
+  <time datetime="{{ .Date }}">{{ dateFormat "January 2, 2006" .Date }}</time>
   {{ end }}
 
   {{ if and .IsHome (isset .Site.Params "Tagline") }}
