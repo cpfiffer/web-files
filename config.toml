@@ -9,7 +9,7 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", ".rds", ".csv"]
 
 [params]
-    themeColor = "theme-base-0d"
+    themeColor = "theme-base-0f"
     intro = true
     AuthorName = "Cameron Pfiffer"
     github = "https://github.com/cpfiffer"
@@ -19,30 +19,18 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$", ".rds", ".csv"]
     SocialLinks = true
     TwitterUsername = "CameronPfiffer"
     GithubUsername = "cpfiffer"
-    description = "R, finance, programming, writing."
+    description = " \n Programming, finance, writing."
     dateFormat = "Jan 2, 2006"
     copyrightOwner = "Cameron Pfiffer"
     copyrightStartYear = "2017"
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
     
 [author]
-  name = "Cameron"
+  name = "Cameron Pfiffer"
     
 [author.social]
   github = "cpfiffer"
   twitter = "CameronPfiffer"
 
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-    
-[permalinks]
-  page = "/:slug/"
   
 [[menu.main]]
   name = "About"

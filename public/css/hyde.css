@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", serif;
 }
 @media (min-width: 48em) {
   html {
@@ -75,12 +75,15 @@ html {
   color: #fff;
 }
 
-/* About section */
+/* About section
+"Abril Fatface",  */
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: "Lato", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 /* Sidebar nav */
@@ -166,8 +169,6 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
-
 /*
  * Themes
  *
@@ -240,11 +241,11 @@ a.sidebar-nav-item:focus {
   color: #aa759f;
 }
 
-/* Brown */
+/* == Cameron Town == */
 .theme-base-0f .sidebar {
-  background-color: #8f5536;
+  background-color: #495d7c;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+  color: #495d7c;
 }

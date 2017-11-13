@@ -36,14 +36,25 @@
     </script>
 </head>
 
-<body class="theme-base-0d ">
+<body class="theme-base-0f ">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:100|PT+Serif" rel="stylesheet">
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <a href="./"><h1>Cameron Pfiffer</h1></a>
       <p class="lead">
-       R, finance, programming, writing. 
+        
+ Programming, finance, writing. 
       </p>
     </div>
 
@@ -52,15 +63,10 @@
       
         <li><a href="./about/index.html"> About </a></li>
       
-        <li><a href="./post/a-brief-paper-on-cointegration-in-crude-oil/"> A Brief Paper on Cointegration in Crude Oil </a></li>
-      
-        <li><a href="./post/perfect-numbers/"> Perfect Numbers </a></li>
-      
         <li><a href="./post"> Posts </a></li>
       
     </ul>
 
-    <p>&copy; 2017. All rights reserved. </p>
   </div>
 </div>
 
@@ -71,6 +77,114 @@
       
   <div class="post">
     <h1 class="post-title">
+      <a href="./post/corporate-debt/">
+        Corporate Debt
+      </a>
+    </h1>
+
+    <span class="post-date">Tue, Sep 12, 2017</span>
+
+    <p>This strikes me as <a href="https://www.ft.com/content/46027dd2-8f6c-11e7-9084-d0c17942ba93">a strange use of corporate cash</a>.</p>
+<blockquote>
+<p>Thirty US companies together have more than $800bn of fixed-income investments, according to a Financial Times analysis of their most recent filings with the US Securities and Exchange Commission.</p>
+</blockquote>
+<p>That’s a lot of money. You might be wondering who those thirty companies are, and it’s probably who you’d expect – tech companies with far too much cash sitting around collecting dust. Apple, Alphabet, and Microsoft are cited.</p>
+<p>This strikes me as a huge problem (<a href="https://www.economist.com/news/business-and-finance/21722809-their-excuses-doing-so-dont-add-up-tech-firms-hoard-huge-cash-piles">I’m not the only one</a>): fixed income investing is really useful if you’re trying to meet fixed obligations, like an insurer or pension fund might, or for hedges on inflation and foreign exchange. It’s certainly not something research and development companies should be doing. They should be piling that cash into R&amp;D, acquisitions, buybacks, literally anything other than fixed income investments.</p>
+<p>I’d also be more than willing to take it. You know, for the team.</p>
+<p>We’ll close on this happy note:</p>
+<blockquote>
+<p>The emergence of US companies as a leading investor in corporate debt alongside traditional asset managers comes at a time many in the market express concern about a bond market bubble that could be vulnerable to bursting should inflation and economic growth accelerate.</p>
+</blockquote>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="./post/the-american-dream/">
+        The American Dream
+      </a>
+    </h1>
+
+    <span class="post-date">Sun, Sep 3, 2017</span>
+
+    <p>Edmund Phelps writing at <a href="https://www.project-syndicate.org/commentary/recalling-the-american-dream-by-edmund-s--phelps-2017-08?utm_source=Project+Syndicate+Newsletter&amp;utm_campaign=e8bef8a0bc-sunday_newsletter_3_9_2017&amp;utm_medium=email&amp;utm_term=0_73bad5b7d8-e8bef8a0bc-104329629">Project Syndicate</a>:</p>
+
+<blockquote>
+<p>What made the American Dream distinctive was neither the hope of winning the lottery nor of being buoyed by national market forces or public policy. It was the hope of achieving things, with all that that entails: drawing on one’s personal knowledge, trusting one’s intuition, venturing into the unknown. It reflected the deep need of these Americans to have the experience of succeeding at something: a craftsman’s gratification at seeing his mastery result in better work, or a merchant’s satisfaction at seeing “his ship come in.” It was success that mattered, not relative success (would anyone want to be the sole achiever?). And the process may have mattered more than the success.</p>
+</blockquote>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="./post/2017-08-26-flashcrash/">
+        The Flash Crash
+      </a>
+    </h1>
+
+    <span class="post-date">Sat, Aug 26, 2017</span>
+
+    <p><a href="http://www.afajof.org/details/journalArticle/10546091/The-Flash-Crash-HighFrequency-Trading-in-an-Electronic-Market.html">A paper</a> came out in the April 2017 edition of the <em>Journal of Finance</em> that I found to be absolutely fascinating. Normally I’d just put a link up on Twitter and move on, but leaving Facebook and Twitter have limited my ability to scream about cool papers. I thought I’d do a brief post about the paper and talk about why it’s interesting to me.</p>
+<p>The abstract:</p>
+<blockquote>
+<p>We study intraday market intermediation in an electronic market before and during a period of large and temporary selling pressure. On May 6, 2010, U.S. financial markets experienced a systemic intraday event—the Flash Crash—where a large automated selling program was rapidly executed in the E‐mini S&amp;P 500 stock index futures market. Using audit trail transaction‐level data for the E‐mini on May 6 and the previous three days, we find that the trading pattern of the most active nondesignated intraday intermediaries (classified as High‐Frequency Traders) did not change when prices fell during the Flash Crash.</p>
+</blockquote>
+<p>The flash crash<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> has always been an interesting subject, because it illustrates a lesson that anyone who is involved with markets knows – if you sell a ton of stuff, the prices go down. But perhaps more importantly, it demonstrates the highly interconnected nature of modern financial markets.</p>
+<p>During the flash crash, an institutional trader initiated an algorithm to sell an incredibly large amount of E-mini shares, a futures contract on the S&amp;P 500. The algorithm used was a fairly simplistic strategy that aimed to trade 9% of the past minute’s volume.</p>
+<p>I have a lot of feelings on this kind of strategy. It’s not especially tactful, it has no regard to price or timing, and fails to adapt to changing conditions. If I’m aware of someone trading a tremendous amount of shares every minute (and assuming I can devise their strategy before they complete the trade), I might try to game the system by increasing the volume traded in the previous minute – either by simply churning a position or taking large long positions – and then using the foreknowledge that a large trade is about to come to take advantage. Particularly for a trade the size that the institution was trying to make (around $4.9 billion), this is a really crappy way to do it.</p>
+<p>Back to the paper. It’s well worth the read. They study audit trail level data for four days during and before the flash crash in the E-mini market, and their interesting finding is that high-frequency traders didn’t really change their trading behavior during the event. This is in contrast to a lot of the murmurings commonly bandied about in regards to the flash crash, where everyone mutters something to the effect of “HFTs got out, liquidity dried up, etc.”</p>
+<p>The authors note that market makers, not high-frequency traders, altered their inventory holding behavior in response to changing prices. Interesting.</p>
+<p>Give it a read.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>You can read more about the flash crash in the <a href="https://www.sec.gov/news/studies/2010/marketevents-report.pdf">SEC’s report</a> on the matter.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="./post/english-pronunciation/">
+        English Pronunciation
+      </a>
+    </h1>
+
+    <span class="post-date">Wed, Aug 16, 2017</span>
+
+    <p>My last name tends to throw a lot of people off, because it has far too many f&rsquo;s and not enough real letters. While doing a bit of research on how to tell people how to best pronounce my name (it&rsquo;s &ldquo;fye-fur&rdquo;, not &ldquo;fiffer&rdquo;), I found a <a href="http://ncf.idallen.com/english.html">neat little poem</a> designed to showcase some of the strange ways English pronounces words. I sent it out to a couple of my friends from Norway and Greece and they politely declined to try a live reading. I can see why; I messed up about 15-20 words while reading it aloud.</p>
+
+<p>Here&rsquo;s an excerpt:</p>
+
+<blockquote>
+<p>Compare alien with Italian,
+Dandelion and battalion.
+Sally with ally, yea, ye,
+Eye, I, ay, aye, whey, and key.
+Say aver, but ever, fever,
+Neither, leisure, skein, deceiver.
+Heron, granary, canary.
+Crevice and device and aerie.</p>
+
+<p>Face, but preface, not efface.
+Phlegm, phlegmatic, ass, glass, bass.
+Large, but target, gin, give, verging,
+Ought, out, joust and scour, scourging.
+Ear, but earn and wear and tear
+Do not rhyme with here but ere.
+Seven is right, but so is even,
+Hyphen, roughen, nephew Stephen,
+Monkey, donkey, Turk and jerk,
+Ask, grasp, wasp, and cork and work.</p>
+</blockquote>
+
+<p>Give it a shot, and see how well you can do with the whole poem. It&rsquo;s certainly fun to do.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="./post/perfect-numbers/">
         Perfect Numbers
       </a>
@@ -79,11 +193,8 @@
     <span class="post-date">Tue, Aug 15, 2017</span>
 
     <p>I just started reading a book called <a href="https://books.google.co.uk/books/about/How_to_Prove_it.html?id=murSjwEACAAJ&amp;redir_esc=y&amp;hl=en">How to Prove It: A Structured Approach</a>, a book all about writing and understanding proofs. My unconventional background in mathematics means that I have a fair bit of terror when it comes to proofs; they have often come up on more quantitative finance courses in a tangential manner, as the proofs are often unnessecary. The fact remains that I am terrified by them, and wanted to get over my fear of proofs.</p>
-
-<p>In the process, I read a bit on <a href="https://en.wikipedia.org/wiki/Perfect_number">perfect numbers</a>. One of the proofs in the book was Euclid&rsquo;s proof about infinite primes, and I figured I should write a little bit of code to find perfect numbers, for gits and shiggles.</p>
-
-<p>Here&rsquo;s the code to compute <a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sums</a> in Julia, a necessary intermediate step in perfect number evaluation.</p>
-
+<p>In the process, I read a bit on <a href="https://en.wikipedia.org/wiki/Perfect_number">perfect numbers</a>. One of the proofs in the book was Euclid’s proof about infinite primes, and I figured I should write a little bit of code to find perfect numbers, for gits and shiggles.</p>
+<p>Here’s the code to compute <a href="https://en.wikipedia.org/wiki/Aliquot_sum">aliquot sums</a> in Julia, a necessary intermediate step in perfect number evaluation.</p>
 <pre><code>using Primes
 
 function aliquot(x::Int64, verbose=false)
@@ -95,16 +206,13 @@ function aliquot(x::Int64, verbose=false)
     end
     if verbose == true print(divisors) end
     return sum(divisors)
-end
-</code></pre>
-
-<p>This is a function for computing the next prime number after integer $x$.</p>
-
+end</code></pre>
+<p>This is a function for computing the next prime number after integer <span class="math inline">\(x\)</span>.</p>
 <pre><code>function next_perfect(x::Int64, limit=Inf64)
     # Given a number, find the next highest perfect number.
     found = false
     while(found==false)
-        # You can set a computational limit with the 'limit' argument.
+        # You can set a computational limit with the &#39;limit&#39; argument.
         if (x &gt;= limit) break end
         if aliquot(x) == x
             print(x, &quot; is the next perfect number.&quot;)
@@ -114,14 +222,13 @@ end
         x += 1
     end
     return x
-end
-</code></pre>
+end</code></pre>
 
   </div>
   
   <div class="post">
     <h1 class="post-title">
-      <a href="./post/a-brief-paper-on-cointegration-in-crude-oil/">
+      <a href="./post/2017-08-06-a-brief-paper-on-cointegration-in-crude-oil/">
         A Brief Paper on Cointegration in Crude Oil
       </a>
     </h1>
@@ -1023,6 +1130,8 @@ auc</code></pre>
 
 <ul>
 <li>R</li>
+<li>Julia</li>
+<li>VBA</li>
 <li>Python</li>
 <li>Matlab<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></li>
 <li>SQL</li>
@@ -1045,7 +1154,7 @@ auc</code></pre>
 <ol>
 <li id="fn:1">Yes, this is confusing, and it makes typing up resumes very difficult.
  <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">I say Matlab, but most of my experience has been with the GNU version called <a href="https://www.gnu.org/software/octave/">Octave</a>. The syntax and functions are pretty much identical, with only minor changes required to adapt.
+<li id="fn:2">I say Matlab, but most of my experience has been with the GNU version called <a href="https://www.gnu.org/software/octave/">Octave</a>. The syntax and functions are pretty much identical &ndash; though Octave is <a href="https://julialang.org/benchmarks/">far slower</a> than Matlab and everything else.
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
 </ol>
 </div>

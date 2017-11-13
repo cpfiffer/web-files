@@ -29,6 +29,8 @@ I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/
 
 ### Programming
 * R
+* Julia
+* VBA
 * Python
 * Matlab[^2]
 * SQL
@@ -42,4 +44,4 @@ I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/
 * Exploratory Analysis
 
 [^1]: Yes, this is confusing, and it makes typing up resumes very difficult.
-[^2]: I say Matlab, but most of my experience has been with the GNU version called [Octave](https://www.gnu.org/software/octave/). The syntax and functions are pretty much identical, with only minor changes required to adapt.
+[^2]: I say Matlab, but most of my experience has been with the GNU version called [Octave](https://www.gnu.org/software/octave/). The syntax and functions are pretty much identical -- though Octave is [far slower](https://julialang.org/benchmarks/) than Matlab and everything else.

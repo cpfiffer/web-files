@@ -7,10 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Cameron Pfiffer</copyright>
-    <lastBuildDate>Tue, 15 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Corporate Debt</title>
+      <link>/post/corporate-debt/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/corporate-debt/</guid>
+      <description>This strikes me as a strange use of corporate cash.
+Thirty US companies together have more than $800bn of fixed-income investments, according to a Financial Times analysis of their most recent filings with the US Securities and Exchange Commission.
+That’s a lot of money. You might be wondering who those thirty companies are, and it’s probably who you’d expect – tech companies with far too much cash sitting around collecting dust.</description>
+    </item>
+    
+    <item>
+      <title>The American Dream</title>
+      <link>/post/the-american-dream/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-american-dream/</guid>
+      <description>Edmund Phelps writing at Project Syndicate:
+ What made the American Dream distinctive was neither the hope of winning the lottery nor of being buoyed by national market forces or public policy. It was the hope of achieving things, with all that that entails: drawing on one’s personal knowledge, trusting one’s intuition, venturing into the unknown. It reflected the deep need of these Americans to have the experience of succeeding at something: a craftsman’s gratification at seeing his mastery result in better work, or a merchant’s satisfaction at seeing “his ship come in.</description>
+    </item>
+    
+    <item>
+      <title>The Flash Crash</title>
+      <link>/post/2017-08-26-flashcrash/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-08-26-flashcrash/</guid>
+      <description>A paper came out in the April 2017 edition of the Journal of Finance that I found to be absolutely fascinating. Normally I’d just put a link up on Twitter and move on, but leaving Facebook and Twitter have limited my ability to scream about cool papers. I thought I’d do a brief post about the paper and talk about why it’s interesting to me.
+The abstract:
+We study intraday market intermediation in an electronic market before and during a period of large and temporary selling pressure.</description>
+    </item>
+    
+    <item>
+      <title>English Pronunciation</title>
+      <link>/post/english-pronunciation/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/english-pronunciation/</guid>
+      <description>My last name tends to throw a lot of people off, because it has far too many f&amp;rsquo;s and not enough real letters. While doing a bit of research on how to tell people how to best pronounce my name (it&amp;rsquo;s &amp;ldquo;fye-fur&amp;rdquo;, not &amp;ldquo;fiffer&amp;rdquo;), I found a neat little poem designed to showcase some of the strange ways English pronounces words. I sent it out to a couple of my friends from Norway and Greece and they politely declined to try a live reading.</description>
+    </item>
     
     <item>
       <title>Perfect Numbers</title>
@@ -23,10 +64,10 @@
     
     <item>
       <title>A Brief Paper on Cointegration in Crude Oil</title>
-      <link>/post/a-brief-paper-on-cointegration-in-crude-oil/</link>
+      <link>/post/2017-08-06-a-brief-paper-on-cointegration-in-crude-oil/</link>
       <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/a-brief-paper-on-cointegration-in-crude-oil/</guid>
+      <guid>/post/2017-08-06-a-brief-paper-on-cointegration-in-crude-oil/</guid>
       <description>I&amp;rsquo;ve just finished putting the final touches on my final paper for my master&amp;rsquo;s degree, and I thought I&amp;rsquo;d write up a bit about the process. You can get the fancy LaTeX version here.
 My final summer course for the master&amp;rsquo;s program was all about Energy Finance, taught by an econometrician1. Commensurate with the professor&amp;rsquo;s experience, the final paper was along the same lines. We were allowed to choose between three different project options.</description>
     </item>

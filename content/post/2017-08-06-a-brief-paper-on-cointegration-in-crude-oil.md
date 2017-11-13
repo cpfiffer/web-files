@@ -2,17 +2,6 @@
 title: A Brief Paper on Cointegration in Crude Oil
 author: ~
 date: '2017-08-06'
-slug: a-brief-paper-on-cointegration-in-crude-oil
-categories: []
-tags: []
-Categories:
-  - Development
-  - GoLang
-Description: ''
-Tags:
-  - Development
-  - golang
-menu: main
 ---
 
 I've just finished putting the final touches on my final paper for my master's degree, and I thought I'd write up a bit about the process. You can get the fancy LaTeX version [here](https://drive.google.com/file/d/0B6yUWclvz_SNREhObUxEVjFESWs/view?usp=sharing).

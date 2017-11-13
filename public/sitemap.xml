@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/corporate-debt/</loc>
+    <lastmod>2017-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/the-american-dream/</loc>
+    <lastmod>2017-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017-08-26-flashcrash/</loc>
+    <lastmod>2017-08-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/english-pronunciation/</loc>
+    <lastmod>2017-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/perfect-numbers/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/a-brief-paper-on-cointegration-in-crude-oil/</loc>
+    <loc>/post/2017-08-06-a-brief-paper-on-cointegration-in-crude-oil/</loc>
     <lastmod>2017-08-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,7 +83,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -79,18 +99,6 @@
   </url>
   
   <url>
-    <loc>/categories/development/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/development/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/finance/</loc>
     <lastmod>2017-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -98,19 +106,7 @@
   
   <url>
     <loc>/categories/general/</loc>
-    <lastmod>2017-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/golang/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/golang/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,7 +148,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,13 +166,13 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/web/</loc>
-    <lastmod>2017-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
