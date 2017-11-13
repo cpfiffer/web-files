@@ -7,7 +7,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+<<<<<<< HEAD
 data/
+=======
+>>>>>>> refs/remotes/origin/master
 
 # Windows Installer files
 *.cab
@@ -46,4 +49,7 @@ data/
 Network Trash Folder
 Temporary Items
 .apdisk
+<<<<<<< HEAD
 .Rproj.user
+=======
+>>>>>>> refs/remotes/origin/master
