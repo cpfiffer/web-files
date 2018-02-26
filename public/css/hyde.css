@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Serif", serif;
+  font-family: "Computer Modern Sans", "PT Serif", serif;
 }
 @media (min-width: 48em) {
   html {
@@ -41,7 +41,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -65,7 +65,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 19rem;
     text-align: left;
   }
 }

@@ -1,8 +1,0 @@
-{{ if not ( eq .Section "page" ) }}
-<footer class='single-footer'>
-  {{ range $taxonomy, $pages := .Site.Taxonomies }}
-    {{ $.Scratch.Set "taxonomy" $taxonomy }}
-    {{ partial "single/taxonomy-list.html" $ }}
-  {{end}}
-</footer>
-{{ end }}
