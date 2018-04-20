@@ -3,6 +3,7 @@ title: Scientific Papers
 author: ~
 date: '2018-04-05'
 slug: scientific-papers
+author: Cameron Pfiffer
 categories: []
 tags: []
 draft: no

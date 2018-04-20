@@ -1,7 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Cameron's Blog"
-theme = "tuftesque"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
