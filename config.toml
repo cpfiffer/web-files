@@ -20,6 +20,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     description = "A place to put my stuff."
+    copyright = false
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
@@ -31,6 +32,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     MathJaxVersion = "2.7.1"
 
     backgroundcolor = "white"
+    copyrightHolder = "Cameron Pfiffer"
 
     [params.logo]
     url = "banner.png"
