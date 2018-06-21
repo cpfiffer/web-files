@@ -30,3 +30,10 @@ Miscellaneous links I think are good.
 * The [Wall Street Journal](https://www.wsj.com/)
 * [Washington Post](https://www.washingtonpost.com/)
 * [FiveThirtyEight](http://fivethirtyeight.com/)
+
+### Education
+{{% marginnote "me" %}} I've learned pretty much everything I know about math from Khan Academy. Best place on the internet. {{% /marginnote%}}
+
+* [Khan Academy](https://www.khanacademy.org/)
+
+That's all, folks.
