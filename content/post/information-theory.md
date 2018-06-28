@@ -10,7 +10,6 @@ draft: false
 
 I've recently been perusing an introductory text of [information theory](https://en.wikipedia.org/wiki/Information_theory). Information theory is one of those things that I have always wanted to look into but never gotten around to -- but now I am an adult with real things to try not to do, so I figured what the hell.
 
-
 Information theory is the scientific study of how information can be quantified, stored, and communicated efficiently. It's fascinating to read the version of the book I have as the author (and Claude Shannon, the father of information theory) all viewed everything as telephonic or telegraphic. Pierce mentions computers a handful of times, but often only to describe what they are incapable of doing.
 
 {{% marginnote "" %}} He calls them "automata", which is such a lovely old-timey phrase. {{% /marginnote%}}
