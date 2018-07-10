@@ -3,7 +3,7 @@
 <body>
 <style>
   body {
-    padding-left: 0 !important;
+    /* padding-left: 0 !important; */
   }
   p {
     width: 100%;
@@ -18,8 +18,8 @@
       <h2><a href="{{ .RelPermalink | relURL }}">See all posts</a></h2>
     {{else}}
       {{ partial "content.header.html" . }}
-      <p>{{ .Params.excerpt }}</p>
-      <p><a href="{{ .RelPermalink | relURL }}">Read On &rarr;</a></p>
+      <!-- <p>{{ .Params.excerpt }}</p> -->
+      <!-- <p><a href="{{ .RelPermalink | relURL }}">Read On &rarr;</a></p> -->
       <hr>
     {{ end  }}
   {{ end }}
