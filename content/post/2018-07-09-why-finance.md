@@ -44,4 +44,23 @@ What about cryptocurrencies? Many financial economists I have spoken with are so
 I am interested in finance because it is interesting. We all have money, sometimes however little, and we all use it. But more importantly, we are still in the midst of what may be the largest change in financial markets since fiat money. We are still trying to figure out how computational power can effect financial markets.
 
 ## What are you going to do after you graduate?
-I think it is too soon to say what I might like to do. Certainly there is a gravitation to the timescale and scope of an early academic career, but there's also an engineer in me -- I like building things. I like functional programming, and systems rogramming, and data science. I think it's just a question of what everything will look like in five years.
+Academia absolutely has it's allure. In academia there is substantially less pressure to produce fiscally viable research -- you can grind away on something merely because it is personally interesting or valuable in a nonmonetary sense either to your peers or to society's understanding of financial markets. The resources you have access to are not small, but they are also not __enormous__ like they might be in the private sector.
+
+{{% marginnote "right-now" %}} I say "right now" because everyone has informed me that my interests will change dramatically over the course of my studies. {{% /marginnote%}}
+
+As of right now, here are the broad interests I might like to work in:
+
+- Computational finance
+- Asset pricing
+- High-frequency, algorithmic, and systematic trading
+- Computational financial engineering
+{{% marginnote "simon" %}} See _[Composing contracts: An adventure in financial engineering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/07/contracts-icfp.pdf)_ by Jones, Eber, and Seward. This is not strictly finance, but it is something I am heavily interested in and would likely enjoy branching out into. I think my favorite thing about this paper is it was the first time I saw how [Haskell](https://www.haskell.org/) could be unique and useful. Granted, I am still not a particularly talented Haskell programmer, but it is always nice to dream. {{% /marginnote%}}
+- Cryptocurrencies
+- Blockchain technology
+- Fintech
+
+What about the private sector? The allure there is strong too. In the private sector I could have the responsibility for a thing I worked on. If it was a portion of a pricing engine for a market making desk, I would have responsibility for making sure that it is _accurate_, _timely_, and _faultless_. That responsibility is something I don't think people get in quite so direct a manner in academia. I think the problems would also tend to be a bit more focused and less nebulous which I've noticed tends to substantially focus my ability to work.
+
+I suspect it might be fun to work for [Jane Street](https://www.janestreet.com/), though I doubt I am smart enough to work there. Most everyone I've seen give talks from Jane Street is absolutely whip smart and quick. I like that they use [OCaml](https://ocaml.org/) for everything. I like that they are market makers, I like that they are problem solvers, and I like that they are technologists. There are a lot of people in finance as of 2018 who are very much rooted in the way finance worked in previous decades. It doesn't work that way anymore. Markets are ever more automated and complex.
+
+I guess I'll just have to find out in a couple years, and see how I feel about how hard the PhD was for me. I suspect I'll end up going for whatever is the most difficult thing to do.
