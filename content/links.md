@@ -48,8 +48,12 @@ Miscellaneous links I think are good.
 * [R](https://www.r-project.org/)
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
-{{% marginnote "haskell" %}} Do you like purity? Do you like a typing system so fierce it'll make your head spin? Do you like unlearning everything you ever thought you knew about programming? Try Haskll! {{% /marginnote%}}
+{{% marginnote "haskell" %}} Do you like purity? Do you like a typing system so fierce it'll make your head spin? Do you like unlearning everything you ever thought you knew about programming? Try Haskell! {{% /marginnote%}}
 
 * [Haskell](https://www.haskell.org/)
+
+### Probabalistic Programming
+* An [introduction](https://www.cs.cornell.edu/courses/cs4110/2016fa/lectures/lecture33.html)
+* [Turing.jl](https://github.com/TuringLang/Turing.jl)
 
 That's all, folks.
