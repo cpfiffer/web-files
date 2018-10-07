@@ -1,18 +1,24 @@
 <section>
-  <h4 class="content-title">
+  <div class="content-row">
+
+  <div class="content-row-title">
   {{ if .IsNode }}
   <a href="{{ .Permalink | relURL }}">{{ .Title}}</a>
   {{ else }}
   <a href="{{ .RelPermalink | relURL}}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
   {{ end }}
-  {{ if .IsPage }}
-  <!-- {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }} -->
-  {{ if not .Params.hidedate }}
-  <!-- <i class="fa fa-calendar"></i> -->
-    &nbsp;{{ .Date.Format "Jan 2, 2006" }}
-  {{end }}
-</h4>
 
+  {{ if .IsPage }}&nbsp;
+  <!-- {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }} -->
+  {{ if not .Params.hidedate }}&nbsp;
+  <!-- <i class="fa fa-calendar"></i> -->
+  <span class="index-date">
+  &nbsp;{{ .Date.Format "Jan 2, 2006" }}
+  </span class="index-date">
+</div>
+  {{end }}
+</div>
+<hr>
   {{ if or (eq .Type "post") (.Params.meta)  }}
   <span class="content-meta">
 
