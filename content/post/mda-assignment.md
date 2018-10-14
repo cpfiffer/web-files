@@ -31,7 +31,7 @@ Mayew et al. present striking results for models constructed only on *GC_MGMT*, 
 
 [^gc]: Sourced from Table 3, column 4.
 
-The author's paper generally well supports the idea that MD&A disclosures contain information relevant to predicting a bankruptcy, even using fairly simlistic methods. Taking the percentage of positive and negative words and determining whether the management has expressed a going concern have proved to be powerful predictors. The model inclusive of the auditor's opinion, the MD&A variables, and financial variables proved to be well-fit with a Pseudo-R$^2$ of 21.13%.
+The author's paper generally well supports the idea that MD&A disclosures contain information relevant to predicting a bankruptcy, even using fairly simlistic methods. Taking the percentage of positive and negative words and determining whether the management has expressed a going concern have proved to be powerful predictors. The model inclusive of the auditor's opinion, the MD&A variables, and financial variables proved to be well-fit with a Pseudo-R\(^2\) of 21.13%.
 
 While this is an interesting finding, there is much more that could be done in this space. The natural-language processing space in machine learning has experienced tremendous growth in the past several years, and I suspect that applications from that space would apply well to MD&A analysis.
 
