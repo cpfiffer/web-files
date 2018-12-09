@@ -12,9 +12,9 @@ tags: ["Me"]
 
 {{% marginnote "mn-example" %}}It's me!{{% /marginnote%}}
 
-I'm a graduate student in finance. I also play with [code](https://www.github.com/cpfiffer) and pianos.
+I'm a graduate student in finance. I also play with [code](https://www.github.com/cpfiffer) and [pianos](https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber).
 
-I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) (which itself is part of the [University of Reading](https://www.reading.ac.uk/)). Come fall, I will be a PhD student at the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance) studying finance.
+I am a PhD student at the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance) studying finance. I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) (which itself is part of the [University of Reading](https://www.reading.ac.uk/)), and a BSc in Technical Theater from [Southern Oregon University](https://sou.edu/).
 
 My interests are pretty broad in finance, but in general I tend to favor situations where technology is involed:
 
