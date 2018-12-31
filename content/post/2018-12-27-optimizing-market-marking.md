@@ -7,6 +7,8 @@ tags: []
 draft: false
 ---
 
+{{% marginnote "source" %}} Patel, Yagna, 2018, Optimizing Market Making using Multi-Agent Reinforcement Learning, *arXiv:1812.10252 [cs, q-fin, stat]*.{{% /marginnote%}}
+
 Apparently I've been on a kick reading some of these reinforcement learning/market making papers. Yagna Patel published an interesting paper on arXiv[^arxiv] discussing the application of a reinforcement learning agent to market making, one of my favorite topics. Market making, that is, not necessarily reinforcement learning.
 
 # Why
