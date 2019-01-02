@@ -1,3 +1,9 @@
+---
+title: Order Cancellation
+---
+
+
+
 # Notes on Order Cancellation
 
 ## Subrahmanyam, Zeng (2016)
@@ -19,8 +25,8 @@
 
 ### Hypotheses
 
- 	1. We should expect that cancellations should be more informative when performed by HFT firms.
- 	2. Cancellations should be more informative at the top of the book.
+- We should expect that cancellations should be more informative when performed by HFT firms.
+- Cancellations should be more informative at the top of the book.
 
 ### Questions
 

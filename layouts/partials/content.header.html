@@ -12,9 +12,11 @@
   <!-- {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }} -->
   {{ if not .Params.hidedate }}&nbsp;
   <!-- <i class="fa fa-calendar"></i> -->
+  {{ if not .Date.IsZero }}
   <span class="index-date">
   &nbsp;{{ .Date.Format "Jan 2, 2006" }}
   </span class="index-date">
+  {{ end }}
 </div>
   {{end }}
 </div>

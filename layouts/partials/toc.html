@@ -1,8 +1,17 @@
-{{ if .Params.toc  }}
-<section>
+<!-- {{ if .Params.toc  }} -->
+<!-- <section>
   <details closed class="toc">
     <summary>Contents</summary>
     {{ .TableOfContents }}
   </details>
-</section>
-{{ end  }}
+</section> -->
+<!-- {{ end  }} -->
+
+{{ if gt .WordCount 400 }}
+<span class="toc">
+    <header>
+    <h2>Contents</h2>
+    </header>
+    {{.TableOfContents}}
+</span>
+{{ end }}
