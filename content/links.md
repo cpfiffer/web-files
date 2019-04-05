@@ -53,4 +53,9 @@ Miscellaneous links I think are good.
 * An [introduction](https://www.cs.cornell.edu/courses/cs4110/2016fa/lectures/lecture33.html)
 * [Turing.jl](https://github.com/TuringLang/Turing.jl)
 
+## General
+---
+### Cool Sites
+* [Gaussian Processes at Distill](https://distill.pub/2019/visual-exploration-gaussian-processes/)
+
 That's all, folks.
