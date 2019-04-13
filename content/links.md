@@ -10,8 +10,9 @@ Miscellaneous links I think are good.
 
 ## Books
 ---
-### Data Science
+### Data Science & Econometrics
 * [Forecasting: Principles and Practice](https://otexts.org/fpp2/)
+* [Econometrics with R](https://www.econometrics-with-r.org/)
 * [R for Data Science](http://r4ds.had.co.nz/)
 
 ### Machine Learning & AI
