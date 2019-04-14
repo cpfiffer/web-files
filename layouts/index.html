@@ -15,7 +15,6 @@
 {{ range .Site.Pages }}
   {{if eq .Type "post" }}
     {{if eq .Title "Posts"}}
-      <h2><a href="{{ .RelPermalink | relURL }}">See all posts</a></h2>
     {{else}}
       {{ partial "content.header.html" . }}
       <!-- <p>{{ .Params.excerpt }}</p> -->
@@ -24,6 +23,7 @@
     {{ end  }}
   {{ end }}
 {{ end  }}
+<h2><a href="{{ .RelPermalink }}post">See all posts</a></h2>
 {{ partial "footer.html" . }}
 </div>
 </body>
