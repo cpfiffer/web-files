@@ -1,23 +1,25 @@
 <section>
   <div class="content-row">
 
-  <div class="content-row-title">
-  {{ if .IsNode }}
-  <a rel="preload" href="{{ .Permalink | relURL }}">{{ .Title}}</a>
-  {{ else }}
-  <a href="{{ .RelPermalink | relURL}}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
-  {{ end }}
+  <div class="title-container">
+    <div class="content-row-title">
+    {{ if .IsNode }}
+    <a rel="preload" href="{{ .Permalink | relURL }}">{{ .Title}}</a>
+    {{ else }}
+    <a href="{{ .RelPermalink | relURL}}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
+    {{ end }}
+    </div>
 
-  — &nbsp;{{ .Date.Format "Jan 2, 2006" }}
-
-  {{ if .Summary }}
+    <div class="content-row-date"> {{ .Date.Format "Jan 2, 2006" }} </div>
+  </div>
+  <!-- {{ if .Summary }}
     <p>
     {{.Summary}}
     </p>
     <div align="right">
       <a rel="preload" href="{{ .Permalink | relURL }}"> Read more </a>
     </div>
-  {{ end }}
+  {{ end }} -->
 
   {{ if .IsPage }}&nbsp;
   <!-- {{ if .Params.subtitle }}<p class=subtitle>{{ .Params.subtitle }}</p>{{ end }} -->
