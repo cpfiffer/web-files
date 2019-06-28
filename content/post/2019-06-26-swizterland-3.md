@@ -1,5 +1,5 @@
 ---
-title: "Switerland: Day 3"
+title: "Switzerland: Day 3"
 date: 2019-06-26T17:46:48+02:00
 author: "Cameron Pfiffer"
 categories: []
