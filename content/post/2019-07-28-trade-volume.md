@@ -1,5 +1,5 @@
 ---
-title: "Trade Volume and Risk Aversion"
+title: "Trade Volume and Information"
 date: 2019-07-28T09:21:25-07:00
 author: "Cameron Pfiffer"
 categories: []
@@ -41,7 +41,7 @@ We can throw some math on here to make this more specific. Consider two firms, $
 
 
 
-Assume that each firm determines the fundamental value of a security $X$ using a function $f(\cdot)$, which is a deterministic function shared by both firms. Let $f(I) = X^*$ be the true fundamental value of the asset. If $I_x = I_y$, then $f(I_x) = f(I_y)$. We cannot reallly say much in general about cases where $I_x \sub I_y$, since it's possible that the additional information held by $y$ increases or decreases their understanding of fundamental value.
+Assume that each firm determines the fundamental value of a security $X$ using a function $f(\cdot)$, which is a deterministic function shared by both firms. Let $f(I) = X^*$ be the true fundamental value of the asset. If $I_x = I_y$, then $f(I_x) = f(I_y)$. We cannot reallly say much in general about cases where $I\_x \subset I\_y$, since it's possible that the additional information held by $y$ increases or decreases their understanding of fundamental value.
 
 
 
@@ -49,11 +49,11 @@ The problem with this set construction is that sets are often very difficult to 
 
 
 
-Being good Bayesians, both firms $x$ and $y$ know that they only have some subset of the true information set. Suppose their valuations are given by distributions $G_x(I_x)$ and $G_y(I_y)$, with $G(I) = X^*$. Neither of these distributions actually have to be centered around $X^*$. They can be lumpy, multimodal, whatever -- all we care about is the fact that the variance of your beliefs is much higher if you have less information. 
+Being good Bayesians, both firms $x$ and $y$ know that they only have some subset of the true information set. Suppose their valuations are given by distributions $G\_x(I\_x)$ and $G\_y(I\_y)$, with $G(I) = X^\*$. Neither of these distributions actually have to be centered around $X^\*$. They can be lumpy, multimodal, whatever -- all we care about is the fact that the variance of your beliefs is much higher if you have less information. 
 
 
 
-Returning to our statements on $f(\cdot)$, what can we say about the case where $I_x \sub I_y$? Well, only that $\text{var}(G_x) <\text{var}(G_y)$. That is, acquiring new information reduces your uncertainty about what you know and what you know you don't know. 
+Returning to our statements on $f(\cdot)$, what can we say about the case where $I\_x \subset I\_y$? Well, only that $\text{var}(G_x) <\text{var}(G_y)$. That is, acquiring new information reduces your uncertainty about what you know and what you know you don't know. 
 
 
 
