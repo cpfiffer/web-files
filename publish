@@ -1,0 +1,12 @@
+#! /bin/bash
+
+cd /home/cameron/website/web-files
+hugo
+cp public/ ../cpfiffer.github.io -R
+
+git add --all
+git commit -m "Updates"
+
+cd ../cpfiffer.github.io
+git add --all
+git commit -m "Updates"
