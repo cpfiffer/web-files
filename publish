@@ -2,11 +2,13 @@
 
 cd /home/cameron/website/web-files
 hugo
-cp public/ ../cpfiffer.github.io -R
+cp public/* ../cpfiffer.github.io -R
 
 git add --all
 git commit -m "Updates"
+git push
 
 cd ../cpfiffer.github.io
 git add --all
 git commit -m "Updates"
+git push
