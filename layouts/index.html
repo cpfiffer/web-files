@@ -16,14 +16,23 @@
   {{if eq .Type "post" }}
     {{if eq .Title "Posts"}}
     {{else}}
-      {{ partial "content.header.html" . }}
+    <div class = "row">
+      <div class="column-title">
+        <a href="{{ .RelPermalink | relURL}}"> {{ .Title }} </href>
+      </div>
+      <div class="column-date">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </div> 
+    </div>
+    <br>
+      <!-- {{ partial "content.header.html" . }} -->
       <!-- <p>{{ .Params.excerpt }}</p> -->
       <!-- <p><a href="{{ .RelPermalink | relURL }}">Read On &rarr;</a></p> -->
       <!-- <hr> -->
     {{ end  }}
   {{ end }}
 {{ end  }}
-<h2><a href="{{ .RelPermalink }}post">See all posts</a></h2>
+<h2><a href="{{ .RelPermalink }}post" style="text-decoration: none;">See all posts</a></h2>
 {{ partial "footer.html" . }}
 </div>
 </body>
