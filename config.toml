@@ -4,6 +4,7 @@ title = "Cameron's Blog"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -20,6 +21,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Twitter"
     url = "https://twitter.com/rstudio"
+
+[author]
+    name = "Cameron Pfiffer"
 
 [params]
     description = "A place to put my stuff."

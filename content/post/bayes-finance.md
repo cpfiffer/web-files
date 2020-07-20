@@ -1,7 +1,9 @@
 ---
-title: "Bayesian finance"
+title: "Bayesian finance papers"
 output: html_document
 bibliography: bayes.bib
+date: 2020-04-19T20:58:31-07:00
+
 ---
 
 A list of Bayesian finance papers I've noticed. These are mostly sourced from the financial economics literature, and primarily so from the top three journals (_Journal of Finance_, _Review of Financial Studies_, and the _Journal of Financial Economics_). I exclude theoretical papers because the Bayesian component is usually not the most interesting part. I favor empirical papers that use some kind of Bayesian method. Suggestions welcome!
