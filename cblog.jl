@@ -32,7 +32,7 @@ function main(fn)
                         println(io, "author: \"Cameron Pfiffer\"")
                         println(io, "draft: true")
                         println(io, "---\n")
-                        
+
                     end
 
                     if in_yaml
@@ -59,7 +59,7 @@ function main(fn)
                             println(io, replace(line, footnote => ""))
                         end
                     end
-                end 
+                end
             end
         end
 
