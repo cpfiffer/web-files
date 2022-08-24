@@ -111,11 +111,11 @@ body {
 <h1 id="whats-cool">What&rsquo;s cool</h1>
 <p>My favorite papers apply Bayesian methods in a more interesting way. One example is <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jofi.12607">Barillas and Shanken (2018)</a>, who use a closed form solution to analyze the efficacy of various factor models. I like this paper quite a lot, but I think that researchers tend to work really hard to derive closed form solutions when they are not really ncessary. For example, <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jofi.12854">Chib, Zeng, and Zhao (2020)</a> attempted to replicate Barillas and Shanken, and noticed that the use of a Jeffrey&rsquo;s prior on nuisance parameters makes the closed form solution unsound.</p>
 <p>You can avoid this by just numerically solving your model. I believe that we should start thinking more and more computationally as our models become more complex, and Markov Chain Monte Carlo lets you do this. Importantly, this is easier now that ever. It&rsquo;s not 2002 anymore and you don&rsquo;t have to roll your own Gibbs sampler every time you need to solve some model. You can just use a probabilistic programming language like Turing!</p>
-<p><!-- raw HTML omitted -->⊕<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p><label for="book" class="margin-toggle">⊕</label>
+<input type="checkbox" id="book" class="margin-toggle"/>
+<span class="marginnote">
 Some other good PPLs are <a href="https://mc-stan.org/">Stan</a>, <a href="https://github.com/cscherrer/Soss.jl">Soss.jl</a>, <a href="https://docs.pymc.io/">PyMC</a>, and <a href="http://pyro.ai/">Pyro</a>, among many others.
-<!-- raw HTML omitted --></p>
+</span></p>
 <p>Don&rsquo;t get me wrong &ndash; I love theory as much as the next person. Theory is good for telling stories, whereas empirics are good for proving those stories. Or theory is getting more and more complex, and our empirics should rise to meet the challenge. Additionally, I think where Bayesian methods are concerned, people try to mix theory and empirics too closely, and they end up looking for closed form solutions where there are none.</p>
 <p>I want to present a rough sketch of how I think about this, and how I&rsquo;d do it computationally. Assume that there are $N$ factor models, each of which returns an expected return from a function <code>r(m, t, x)</code> for factor model index <code>m</code>, time <code>t</code>, and observable data <code>x</code>. Assume <code>x</code> is a matrix of returns and factors for one security. One nice way to do this in Turing is</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-julia" data-lang="julia"><span style="display:flex;"><span><span style="color:#75715e"># Import Turing</span>
