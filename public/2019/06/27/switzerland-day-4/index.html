@@ -19,7 +19,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <meta name="author" content="Cameron&#39;s Blog">
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
   
 
@@ -68,42 +68,30 @@ body {
 
 
 
-<section><p><label for="book" class="margin-toggle">&#8853;</label>
-<input type="checkbox" id="book" class="margin-toggle"/>
-<span class="marginnote"> See <a href="https://www.amazon.com/Empirical-Market-Microstructure-Institutions-Econometrics/dp/0195301641">here</a> for a link to purchase Joel&rsquo;s book. It&rsquo;s a good one. </span></p>
-
+<section><p><!-- raw HTML omitted -->⊕<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --> See <a href="https://www.amazon.com/Empirical-Market-Microstructure-Institutions-Econometrics/dp/0195301641">here</a> for a link to purchase Joel&rsquo;s book. It&rsquo;s a good one. <!-- raw HTML omitted --></p>
 <p>Today was the first day of the empirical session with <a href="https://albertjmenkveld.com/">Albert Menkveld</a> . We covered the first couple chapters of Joel Hasbrouck&rsquo;s excellent book.</p>
-
-<p><label for="roll" class="margin-toggle">&#8853;</label>
-<input type="checkbox" id="roll" class="margin-toggle"/>
-<span class="marginnote"> Roll, Richard, 1984, A Simple Implicit Measure of the Effective Bid-Ask Spread in an Efficient Market, <em>The Journal of Finance</em> 39, 1127–1139. </span></p>
-
+<p><!-- raw HTML omitted -->⊕<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --> Roll, Richard, 1984, A Simple Implicit Measure of the Effective Bid-Ask Spread in an Efficient Market, <em>The Journal of Finance</em> 39, 1127–1139. <!-- raw HTML omitted --></p>
 <p>We started with the general Roll (1984) model, which is a really straightforward way to think about how order processing costs make it into the bid-ask spread. Basically, it is assumed that trade prices $p^t$ have a random walk with drift evolution, such that</p>
-
 <p>$$
 p_t = p_{t-1} + \mu + u_t
 $$</p>
-
 <p>Hasbrouck notes that the drift term $\mu$ is largely unnessecary, especially since at micro-scale it&rsquo;s hard to have any notion of expected return.</p>
-
 <p>The model above is expanded upon by including an efficient price (fundamental value) $m_t$, which is a martingale:</p>
-
 <p>$$
 m_t = m_{t-1} + u_t
 $$</p>
-
 <p>Prices are then a noisy proxy of the true value, as a function of a cost that market makers need to recoup for processing orders</p>
-
 <p>$$
 p_t = m_t + q_tc
 $$</p>
-
 <p>where $c$ is a fixed per-trade cost incurred by the dealer and $q_t$ is an indicator for a buy or sell ($+1$ for a buy and $-1$ for a sell).</p>
-
-<p><label for="hasbrouck-2009 " class="margin-toggle">&#8853;</label>
-<input type="checkbox" id="hasbrouck-2009 " class="margin-toggle"/>
-<span class="marginnote"> Hasbrouck, Joel, 2009, Trading Costs and Returns for U.S. Equities: Estimating Effective Costs from Daily Data, <em>The Journal of Finance</em> 64, 1445–1477. </span></p>
-
+<p><!-- raw HTML omitted -->⊕<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --> Hasbrouck, Joel, 2009, Trading Costs and Returns for U.S. Equities: Estimating Effective Costs from Daily Data, <em>The Journal of Finance</em> 64, 1445–1477. <!-- raw HTML omitted --></p>
 <p>It&rsquo;s a good model. I&rsquo;m particularly interested in how Hasbrouck (2009) approaches trying to approximate the $c$ variable, as he uses a Gibbs sampler to run a Bayesian linear regression. Given my association with <a href="https://turing.ml">Turing.jl</a>, I can&rsquo;t help but feel that there is a hierarchical model that would provide a better structural estimate of things like adverse selection cost and order processing cost. That&rsquo;d need a more sophisticated model than the Roll model, however, and I&rsquo;m not quite sure I&rsquo;m up to the task (yet).</p>
 </section>
 <section>

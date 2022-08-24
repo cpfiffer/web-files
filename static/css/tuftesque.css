@@ -165,7 +165,7 @@ label.margin-toggle {
 
 
 #homepage{
-  width: 50%;
+  width: 100%;
   margin: auto auto;
   color: #111111;
 }
@@ -316,11 +316,11 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
   font-family: "et-book", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
   background-color: #fffff8;
   color: #333;
@@ -680,7 +680,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 /* Large screens */
 @media all and (max-width: 1200px) {
   #homepage{
-    width: 50%;
+    width: 80%;
   }
 
   body{

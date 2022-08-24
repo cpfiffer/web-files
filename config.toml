@@ -48,8 +48,11 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
     alt = "Logo"
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
+  defaultMarkdownHandler = "goldmark"
   [markup.tableOfContents]
     endLevel = 1
     ordered = true
     startLevel = 1
+
+[markup.goldmark.renderer] 
+unsafe= true
