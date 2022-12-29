@@ -1,59 +1,9 @@
 {{ partial "header.html" . }}
 {{ partial "brand.html" . }}
-<!-- <body style="padding-left: 20%; padding-right: 20%;"> -->
+
 <body>
-<!-- <style>
-  body {
-    /* padding-left: 0 !important; */
-  }
-  p {
-    width: 100%;
-  }
-</style> -->
-<br>
-<!-- <div id="homepage"> -->
-<!--{{ partial "banner.html" . }}-->
 
-<h1> Posts (<a href="/index.xml">RSS</a>)</h1>
-<ul>
-{{ range .Site.Pages }}
-  {{if eq .Type "post" }}
-    {{if eq .Title "Posts"}}
-    {{else}}
-    <!-- <div class = "row">
+{{ .Content }}
 
-      <div class="column-title">
-        <a href="{{ .RelPermalink | relURL}}"> {{ .Title }} </href>
-      </div>
-      <div class="column-date">
-        {{ .Date.Format "Jan 2, 2006" }}
-      </div> 
-    </div> -->
-
-    <li>
-      <a href="{{ .RelPermalink | relURL}}"> {{ .Title }}</a> —  {{ .Date.Format "Jan 2, 2006" }}
-    </li>
-    <!-- <div class = "row">
-      <div class="column-date">
-        {{ .Date.Format "Jan 2, 2006" }}
-      </div> 
-      
-      <div class="column-title">
-        <a href="{{ .RelPermalink | relURL}}"> {{ .Title }} </href>
-      </div>
-      
-    </div> -->
-    <!-- <br> -->
-      <!-- {{ partial "content.header.html" . }} -->
-      <!-- <p>{{ .Params.excerpt }}</p> -->
-      <!-- <p><a href="{{ .RelPermalink | relURL }}">Read On &rarr;</a></p> -->
-      <!-- <hr> -->
-    {{ end  }}
-  {{ end }}
-{{ end  }}
-</ul>
-<!-- <h2><a href="{{ .RelPermalink }}post" style="text-decoration: none;">See all posts</a></h2> -->
 {{ partial "footer.html" . }}
-<!-- </div> -->
 </body>
-</html>

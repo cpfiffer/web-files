@@ -8,6 +8,15 @@ draft: false
 ---
 Miscellaneous links I think are good.
 
+## Economics
+---
+### Industrial organization
+* Ken Train's [Discrete Choice book](https://eml.berkeley.edu/books/choice2.html)
+* Chris Conlon's [industrial organization notes](https://chrisconlon.github.io/gradio.html)
+
+### Finance
+* [Asset Pricing](https://www.johnhcochrane.com/research-all/asset-pricing) by John Cochrane
+
 ## Books
 ---
 ### Data Science & Econometrics
