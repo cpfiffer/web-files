@@ -1,6 +1,5 @@
 ---
 title: "About"
-date: '2016-05-05T21:48:51-07:00'
 categories: ["General"]
 tags: ["Me"]
 ---
@@ -14,20 +13,13 @@ tags: ["Me"]
 
 I play with [code](https://www.github.com/cpfiffer) and [pianos](https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber).
 
-I am a PhD student at the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance) studying finance. I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) (which itself is part of the [University of Reading](https://www.reading.ac.uk/)), and a BSc in Technical Theater from [Southern Oregon University](https://sou.edu/). I'm a developer for [Turing.jl](https://turing.ml), a probabilistic programming tool.
+I am a postdoctoral researcher at [Stanford's GSB](https://www.gsb.stanford.edu/). I work on industrial organization with [Shoshana Vasserman](https://shoshanavasserman.com/). I received my PhD in finance from the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance). I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) (which itself is part of the [University of Reading](https://www.reading.ac.uk/)), and a BSc in Technical Theater from [Southern Oregon University](https://sou.edu/). I'm often a developer for [Turing.jl](https://turing.ml), a probabilistic programming tool.
 
-My interests are pretty broad in finance, but in general I tend to favor situations where technology is involed (with some classic asset pricing stuff too):
+My interests are broad, but I tend to focus on technical topics. I am interested in:
 
-* Market microstructure
-* Cryptocurrency
-* AI in financial markets
-* Dynamic asset pricing
-
-More computer science/statistics interests:
-
-* Probabilistic programming
-* Bayesian methods for big data
-* Reinforcement learning
+* Industrial organization
+* Asset pricing
+* Bayesian statistics
 
 Favorite programming languages:
 
