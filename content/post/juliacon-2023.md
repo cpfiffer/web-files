@@ -4,8 +4,6 @@ output: html_document
 date: 2023-08-03
 ---
 
-# JuliaCon 2023
-
 This past week, I had the privilege of visiting MIT for [JuliaCon](https://juliacon.org/2023/). JuliaCon is the annual convention for [Julia users and developers](https://julialang.org). It was one of the better weeks in recent memory. I feel energized! I want to build things! I want to keep talking with all the cool Julia people who I knew before I arrived, and keep in touch with all the cool _new_ Julia people I met this week.
 
 The reason I thought I should write it up is that I want to explore precisely why I am so pro-Julia, and why I think the community is truly something incredible. I didn't anticipate becoming a "Julia evangelist" but I ended up as one. Most people who know me from Twitter (I refuse to say X for the moment) are aware of my zealous Julia tweets or perhaps my disdain of Python. In person, lots of people say stuff like "I used R today, I'm sorry about that -- I bet you wished I used Julia!"
