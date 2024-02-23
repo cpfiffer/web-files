@@ -1,0 +1,257 @@
+
+<span class="camerons_logo">
+      <span class = "blog_logo">
+        <h1 style="font-style: italic;"> Cameron's Blog </h1>
+         
+      </span>
+      <h2> Finance, statistics, data, and other trash </h2>
+      <h4> <a href="/">About</a> ∘ <a href="/blog">Blog</a> ∘ <a href="/links">Links</a> ∘ <a href="https://github.com/cpfiffer">Github</a> ∘ <a href="/cv/cv.pdf">CV</a></h4>
+      
+</span>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Cameron&#39;s Blog - Getting the Pile</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Cameron&#39;s Blog">
+<meta name="generator" content="Hugo 0.92.2" />
+
+  
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/grids-responsive-min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="/css/tuftesque.css">
+<style>
+body {
+  
+    background-color:  white;
+  
+}
+</style>
+
+
+  
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<h1> Getting the Pile </h1>
+
+
+
+
+
+
+
+<section><p>I&rsquo;ve been interested in various NLP stuff lately, as one might imagine with all the ChatGPT stuff going on. Something I&rsquo;ve become interested in is methods for anlayzing large amounts of text. I&rsquo;ve been looking at the <a href="https://pile.eleuther.ai/">Pile</a> dataset, which is a commonly-used dataset in NLP. I believe ChatGPT has been trained on it, as have many other large <a href="https://en.wikipedia.org/wiki/Foundation_models">foundation models</a>.</p>
+<p>I&rsquo;m trying to download it to tinker with <a href="https://arxiv.org/abs/1905.10347">discrete normalizing flows</a> for token prediction. It&rsquo;s a big dataset &ndash; about 825GB uncompressed. Being a hardo, I wrote my only little cloning script to pull in all the new data. It&rsquo;s not very efficient, but it works. I&rsquo;ll probably write a better one later.</p>
+<p>If you want to use this code, make sure to change the <code>data_dir</code> variable to wherever you want to store the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> HTTP
+<span style="color:#66d9ef">using</span> ProgressMeter
+<span style="color:#66d9ef">import</span> SHA
+<span style="color:#66d9ef">import</span> Downloads
+
+<span style="color:#75715e"># Pile root directory</span>
+pile_root <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://the-eye.eu/public/AI/pile/&#34;</span>
+data_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/data/the-pile/mirror/&#34;</span>
+
+<span style="color:#75715e"># Links path</span>
+links_path <span style="color:#f92672">=</span> joinpath(data_dir, <span style="color:#e6db74">&#34;links.txt&#34;</span>)
+
+<span style="color:#66d9ef">function</span> update_progress(meter, total, now)
+    meter<span style="color:#f92672">.</span>n <span style="color:#f92672">=</span> total
+    <span style="color:#66d9ef">if</span> now <span style="color:#f92672">==</span> total
+        <span style="color:#75715e"># println(&#34;Done!&#34;)</span>
+    <span style="color:#66d9ef">else</span>
+        update!(meter, now)
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">Extract the links from a url and return them as a vector. Remove any any links that include
+</span><span style="color:#e6db74">&#34;..&#34; in the path.
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#66d9ef">function</span> extract_links(url)
+    <span style="color:#75715e"># Send simple get query to pile root directory</span>
+    response <span style="color:#f92672">=</span> HTTP<span style="color:#f92672">.</span>get(url)
+    body <span style="color:#f92672">=</span> <span style="color:#66d9ef">String</span>(response<span style="color:#f92672">.</span>body)
+
+    <span style="color:#75715e"># Extract hrefs from html</span>
+    hrefs <span style="color:#f92672">=</span> eachmatch(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;(?&lt;=href=\&#34;)[^\&#34;]+&#34;</span>, body)
+    links <span style="color:#f92672">=</span> map(x <span style="color:#f92672">-&gt;</span> url <span style="color:#f92672">*</span> x<span style="color:#f92672">.</span>match, hrefs)
+    filter!(x <span style="color:#f92672">-&gt;</span> basename(dirname(x)) <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;..&#34;</span>, links)
+
+    <span style="color:#75715e"># # Write links to file</span>
+    <span style="color:#75715e"># open(links_path, &#34;w&#34;) do f</span>
+    <span style="color:#75715e">#     for link in links</span>
+    <span style="color:#75715e">#         println(f, link)</span>
+    <span style="color:#75715e">#     end</span>
+    <span style="color:#75715e"># end</span>
+
+    <span style="color:#75715e"># Find all the links that are directories</span>
+    dirs <span style="color:#f92672">=</span> filter(x <span style="color:#f92672">-&gt;</span> endswith(x, <span style="color:#e6db74">&#34;/&#34;</span>), links)
+
+    <span style="color:#75715e"># Call extract_links on each directory and concatenate the results</span>
+    <span style="color:#66d9ef">for</span> dir <span style="color:#66d9ef">in</span> dirs
+        links <span style="color:#f92672">=</span> vcat(links, extract_links(dir))
+    <span style="color:#66d9ef">end</span>
+
+    <span style="color:#75715e"># Remove duplicates</span>
+    <span style="color:#66d9ef">return</span> unique(links)
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>isfile(links_path)
+    <span style="color:#75715e"># Send simple get query to pile root directory</span>
+    links <span style="color:#f92672">=</span> extract_links(pile_root)
+
+    <span style="color:#75715e"># Write links to file</span>
+    open(links_path, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">do</span> f
+        <span style="color:#66d9ef">for</span> link <span style="color:#66d9ef">in</span> links
+            println(f, link)
+        <span style="color:#66d9ef">end</span>
+    <span style="color:#66d9ef">end</span>
+
+    <span style="color:#75715e"># Fink the link that contains SHA</span>
+    sha_link <span style="color:#f92672">=</span> links[findfirst(x <span style="color:#f92672">-&gt;</span> occursin(<span style="color:#e6db74">&#34;SHA&#34;</span>, x), links)]
+
+    <span style="color:#75715e"># Download the SHA file if it doesn&#39;t exist</span>
+    ddir <span style="color:#f92672">=</span> joinpath(data_dir, basename(sha_link))
+    <span style="color:#f92672">!</span>isdir(dirname(ddir)) <span style="color:#f92672">&amp;&amp;</span> mkdir(dirname(ddir))
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>isfile(ddir)
+        download(sha_link, ddir)
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># Read the SHA file</span>
+sha <span style="color:#f92672">=</span> open(ddir) <span style="color:#66d9ef">do</span> f
+    read(f, <span style="color:#66d9ef">String</span>)
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># Split the SHA file into lines</span>
+lines <span style="color:#f92672">=</span> split(sha, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+
+<span style="color:#75715e"># Split each line into SHA and file name</span>
+lines <span style="color:#f92672">=</span> map(x <span style="color:#f92672">-&gt;</span> split(x, <span style="color:#e6db74">&#34; &#34;</span>), lines)
+
+<span style="color:#75715e"># Filter out empty lines</span>
+lines <span style="color:#f92672">=</span> filter(x <span style="color:#f92672">-&gt;</span> length(x) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>, [filter(x <span style="color:#f92672">-&gt;</span> length(x) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>, line) <span style="color:#66d9ef">for</span> line <span style="color:#66d9ef">in</span> lines])
+
+<span style="color:#75715e"># Separate into filename and sha</span>
+filenames <span style="color:#f92672">=</span> [joinpath(line[<span style="color:#ae81ff">2</span>]) <span style="color:#66d9ef">for</span> line <span style="color:#66d9ef">in</span> lines]
+shas <span style="color:#f92672">=</span> [line[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> line <span style="color:#66d9ef">in</span> lines]
+
+<span style="color:#75715e"># Create a dictionary of filenames and shas</span>
+sha_dict <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dict</span>(zip(filenames, shas))
+
+<span style="color:#75715e"># Open links file</span>
+links <span style="color:#f92672">=</span> open(links_path) <span style="color:#66d9ef">do</span> f
+    readlines(f)
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># Filter out links ending in /</span>
+filter!(x <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">!</span>endswith(x, <span style="color:#e6db74">&#34;/&#34;</span>), links)
+
+<span style="color:#75715e"># For each link, check if it&#39;s been downloaded</span>
+<span style="color:#66d9ef">for</span> link <span style="color:#66d9ef">in</span> links
+    <span style="color:#75715e"># Get the filename</span>
+    file_relative <span style="color:#f92672">=</span> replace(link, pile_root <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;&#34;</span>)
+
+    <span style="color:#75715e"># Check if the file exists</span>
+    file <span style="color:#f92672">=</span> joinpath(data_dir, file_relative)
+
+    <span style="color:#75715e"># Determine whether to re-download the file</span>
+    download_file <span style="color:#f92672">=</span> <span style="color:#66d9ef">if</span> isfile(file)
+        <span style="color:#75715e"># Check if the file is the correct size</span>
+        file_size <span style="color:#f92672">=</span> filesize(file)
+
+        <span style="color:#66d9ef">if</span> file_size <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> 
+            true
+        <span style="color:#66d9ef">else</span>
+            sha_local <span style="color:#f92672">=</span> open(file) <span style="color:#66d9ef">do</span> f
+                SHA<span style="color:#f92672">.</span>sha2_256(f)
+            <span style="color:#66d9ef">end</span>
+
+            <span style="color:#66d9ef">if</span> haskey(sha_dict, <span style="color:#e6db74">&#34;./&#34;</span> <span style="color:#f92672">*</span> file_relative)
+                sha_local <span style="color:#f92672">!=</span> sha_dict[<span style="color:#e6db74">&#34;./&#34;</span> <span style="color:#f92672">*</span> file_relative]
+            <span style="color:#66d9ef">else</span>
+                true
+            <span style="color:#66d9ef">end</span>
+        <span style="color:#66d9ef">end</span>
+    <span style="color:#66d9ef">else</span>
+        true
+    <span style="color:#66d9ef">end</span>
+
+    <span style="color:#75715e"># Download the file if necessary</span>
+    <span style="color:#66d9ef">if</span> download_file
+        <span style="color:#75715e"># Create the directory if it doesn&#39;t exist</span>
+        <span style="color:#f92672">!</span>isdir(dirname(file)) <span style="color:#f92672">&amp;&amp;</span> mkdir(dirname(file))
+
+        <span style="color:#75715e"># Make the meter</span>
+        p <span style="color:#f92672">=</span> ProgressMeter<span style="color:#f92672">.</span>Progress(<span style="color:#ae81ff">1</span>; desc<span style="color:#f92672">=</span>file_relative, dt<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+        update_fun(total, now) <span style="color:#f92672">=</span> update_progress(p, total, now)
+
+        <span style="color:#75715e"># Download the file</span>
+        println(<span style="color:#e6db74">&#34;Downloading </span><span style="color:#e6db74">$file</span><span style="color:#e6db74">&#34;</span>)
+        Downloads<span style="color:#f92672">.</span>download(link, file, progress<span style="color:#f92672">=</span>update_fun)
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div></section>
+<section>
+  <footer class="page-footer">
+    <hr>
+    ETH: 0x21f825eE35150F6e4f2A2dA55CC3b9cF567bd9Cc (<a href="https://etherscan.io/address/0x21f825eE35150F6e4f2A2dA55CC3b9cF567bd9Cc">Etherscan</a>)
+    
+		<ul class="page-footer-menu">
+		
+		</ul>
+
+  
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  <br>
+
+</footer>
+
+</section>
+</article>
+</div>
+</body>
+</html>
