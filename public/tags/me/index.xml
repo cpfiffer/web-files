@@ -27,8 +27,20 @@
 &lt;input type=&#34;checkbox&#34; id=&#34;mn-example&#34; class=&#34;margin-toggle&#34;/&gt;
 &lt;span class=&#34;marginnote&#34;&gt;It&amp;rsquo;s my jolly face!&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
-&lt;p&gt;I play with finance, economics, statistics, &lt;a href=&#34;https://www.github.com/cpfiffer&#34;&gt;code&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber&#34;&gt;pianos&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I am a postdoctoral researcher at &lt;a href=&#34;https://www.gsb.stanford.edu/&#34;&gt;Stanford&amp;rsquo;s GSB&lt;/a&gt;. I work on industrial organization with &lt;a href=&#34;https://shoshanavasserman.com/&#34;&gt;Shoshana Vasserman&lt;/a&gt;. I received my PhD in finance from the &lt;a href=&#34;https://business.uoregon.edu/phd/concentrations/finance&#34;&gt;University of Oregon&lt;/a&gt;. I have a master&amp;rsquo;s in finance from the &lt;a href=&#34;http://www.icmacentre.ac.uk/&#34;&gt;ICMA Centre&lt;/a&gt; at the &lt;a href=&#34;http://www.henley.ac.uk/&#34;&gt;Henley Business School&lt;/a&gt; (which itself is part of the &lt;a href=&#34;https://www.reading.ac.uk/&#34;&gt;University of Reading&lt;/a&gt;), and a BSc in Technical Theater from &lt;a href=&#34;https://sou.edu/&#34;&gt;Southern Oregon University&lt;/a&gt;. I&amp;rsquo;m often a developer for &lt;a href=&#34;https://turing.ml&#34;&gt;Turing.jl&lt;/a&gt;, a probabilistic programming tool.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m an engineer, statistician, economics, and hammock enthusiast. I play with finance, &lt;a href=&#34;https://www.github.com/cpfiffer&#34;&gt;code&lt;/a&gt;,
+statistics, and &lt;a href=&#34;https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber&#34;&gt;pianos&lt;/a&gt;. I love learning
+about everything.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m a big lover of the &lt;a href=&#34;https://julialang.org/&#34;&gt;Julia&lt;/a&gt; programming language. I&amp;rsquo;ve working on the &lt;a href=&#34;https://turinglang.org/stable/&#34;&gt;Turing.jl&lt;/a&gt;
+project for Bayesian inference. I also head up the &lt;a href=&#34;http://juliagenai.org/&#34;&gt;JuliaGenAI&lt;/a&gt; project, which is a collection of tools for
+using Julia in generative AI contexts.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m building a thing called &lt;a href=&#34;https://www.comind.me&#34;&gt;Comind&lt;/a&gt;. You can read more about the thesis of the project &lt;a href=&#34;/2024/02/23/comind/&#34;&gt;here&lt;/a&gt;,
+and see the Patreon &lt;a href=&#34;https://www.patreon.com/comind&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am a postdoctoral researcher at &lt;a href=&#34;https://www.gsb.stanford.edu/&#34;&gt;Stanford&amp;rsquo;s GSB&lt;/a&gt;.
+I work on industrial organization with &lt;a href=&#34;https://shoshanavasserman.com/&#34;&gt;Shoshana Vasserman&lt;/a&gt;.
+I received my PhD in finance from the &lt;a href=&#34;https://business.uoregon.edu/phd/concentrations/finance&#34;&gt;University of Oregon&lt;/a&gt;.
+I have a master&amp;rsquo;s in finance from the &lt;a href=&#34;http://www.icmacentre.ac.uk/&#34;&gt;ICMA Centre&lt;/a&gt; at the &lt;a href=&#34;http://www.henley.ac.uk/&#34;&gt;Henley Business School&lt;/a&gt;
+(which itself is part of the &lt;a href=&#34;https://www.reading.ac.uk/&#34;&gt;University of Reading&lt;/a&gt;), and a BSc in Technical Theater
+from &lt;a href=&#34;https://sou.edu/&#34;&gt;Southern Oregon University&lt;/a&gt;. I&amp;rsquo;m often a developer for &lt;a href=&#34;https://turing.ml&#34;&gt;Turing.jl&lt;/a&gt;, a probabilistic programming tool.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;whats-on-this-site&#34;&gt;What&amp;rsquo;s on this site&lt;/h2&gt;
 &lt;ul&gt;
@@ -40,6 +52,9 @@
 &lt;h2 id=&#34;what-i-like&#34;&gt;What I like&lt;/h2&gt;
 &lt;p&gt;I tend to focus on computational topics in lots of domains, though generally I am an economist. I am currently interested in:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;Generative AI and NLP&lt;/li&gt;
+&lt;li&gt;Neural network architectures&lt;/li&gt;
+&lt;li&gt;Type systems and compilers&lt;/li&gt;
 &lt;li&gt;Industrial organization&lt;/li&gt;
 &lt;li&gt;Asset pricing&lt;/li&gt;
 &lt;li&gt;Bayesian statistics&lt;/li&gt;

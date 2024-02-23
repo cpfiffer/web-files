@@ -2,6 +2,7 @@
 title: "About"
 categories: ["General"]
 tags: ["Me"]
+permalink: "/comind/"
 ---
 
 # Cameron Pfiffer, PhD
@@ -15,9 +16,23 @@ tags: ["Me"]
 
 ## About me
 
-I play with finance, economics, statistics, [code](https://www.github.com/cpfiffer) and [pianos](https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber).
+I'm an engineer, statistician, economics, and hammock enthusiast. I play with finance, [code](https://www.github.com/cpfiffer), 
+statistics, and [pianos](https://www.youtube.com/channel/UCTcsdFvTCGyJ8vSp3iHuTyg?view_as=subscriber). I love learning
+about everything.
 
-I am a postdoctoral researcher at [Stanford's GSB](https://www.gsb.stanford.edu/). I work on industrial organization with [Shoshana Vasserman](https://shoshanavasserman.com/). I received my PhD in finance from the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance). I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) (which itself is part of the [University of Reading](https://www.reading.ac.uk/)), and a BSc in Technical Theater from [Southern Oregon University](https://sou.edu/). I'm often a developer for [Turing.jl](https://turing.ml), a probabilistic programming tool.
+I'm a big lover of the [Julia](https://julialang.org/) programming language. I've working on the [Turing.jl](https://turinglang.org/stable/)
+project for Bayesian inference. I also head up the [JuliaGenAI](http://juliagenai.org/) project, which is a collection of tools for
+using Julia in generative AI contexts.
+
+I'm building a thing called [Comind](https://www.comind.me). You can read more about the thesis of the project [here](/2024/02/23/comind/),
+and see the Patreon [here](https://www.patreon.com/comind).
+
+I am a postdoctoral researcher at [Stanford's GSB](https://www.gsb.stanford.edu/). 
+I work on industrial organization with [Shoshana Vasserman](https://shoshanavasserman.com/). 
+I received my PhD in finance from the [University of Oregon](https://business.uoregon.edu/phd/concentrations/finance). 
+I have a master's in finance from the [ICMA Centre](http://www.icmacentre.ac.uk/) at the [Henley Business School](http://www.henley.ac.uk/) 
+(which itself is part of the [University of Reading](https://www.reading.ac.uk/)), and a BSc in Technical Theater 
+from [Southern Oregon University](https://sou.edu/). I'm often a developer for [Turing.jl](https://turing.ml), a probabilistic programming tool.
 
 ---
 
@@ -34,6 +49,9 @@ I am a postdoctoral researcher at [Stanford's GSB](https://www.gsb.stanford.edu/
 
 I tend to focus on computational topics in lots of domains, though generally I am an economist. I am currently interested in:
 
+* Generative AI and NLP
+* Neural network architectures
+* Type systems and compilers
 * Industrial organization
 * Asset pricing
 * Bayesian statistics
