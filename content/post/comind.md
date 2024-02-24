@@ -48,7 +48,7 @@ Let's chat.
 
 Alright, now on to the main thing.
 
-## What is Comind?
+# What is Comind?
 
 I haven't really been able to describe what the fuck comind is. 
 I kind of occasionally allude to it on twitter (X is such a stupid name) 
@@ -84,6 +84,8 @@ Comind is
 Let's expand on each.
 
 ## First, a knowledge graph
+
+---
 
 Comind is a communal knowledge graph. Comind makes it very easy to connect,
 link, and understand the things that you know. The primary interaction of
@@ -194,6 +196,7 @@ provide an ease to accessing a very large knowledge graph that is constantly gro
 This leads us to the next part, the community aspect of comind.
 
 ## Second, a social network
+---
 
 A distinguishing feature of Comind is that you can share your knowledge graph very easily with friends, 
 strangers, enemies, etc. You are free to link to the public thoughts of others, and others
@@ -253,6 +256,7 @@ because it is a surprisingly techincal problem, but I think it's a very cool fea
 make it work.
 
 ## Third, a playground
+---
 
 The last part of comind is that it's a playground for me, for my friends, for generative models, for
 machine learning. Do you want to host your own comind? By all means. 

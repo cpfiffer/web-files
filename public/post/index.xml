@@ -52,7 +52,7 @@ description of your history, and things you think are cool as hell. I&amp;rsquo;
 interest ranging from a few hours a week to full-ass cofounder type stuff.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s chat.&lt;/p&gt;
 &lt;p&gt;Alright, now on to the main thing.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-comind&#34;&gt;What is Comind?&lt;/h2&gt;
+&lt;h1 id=&#34;what-is-comind&#34;&gt;What is Comind?&lt;/h1&gt;
 &lt;p&gt;I haven&amp;rsquo;t really been able to describe what the fuck comind is.
 I kind of occasionally allude to it on twitter (X is such a stupid name)
 without really being able to describe the whole picture of the thing.
@@ -81,6 +81,7 @@ a list of existing features.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Let&amp;rsquo;s expand on each.&lt;/p&gt;
 &lt;h2 id=&#34;first-a-knowledge-graph&#34;&gt;First, a knowledge graph&lt;/h2&gt;
+&lt;hr&gt;
 &lt;p&gt;Comind is a communal knowledge graph. Comind makes it very easy to connect,
 link, and understand the things that you know. The primary interaction of
 comind is to link thoughts together, either by writing something new or looking
@@ -172,6 +173,7 @@ adding notifications to comind. It&amp;rsquo;s fun and I love it.
 provide an ease to accessing a very large knowledge graph that is constantly growing and changing.&lt;/p&gt;
 &lt;p&gt;This leads us to the next part, the community aspect of comind.&lt;/p&gt;
 &lt;h2 id=&#34;second-a-social-network&#34;&gt;Second, a social network&lt;/h2&gt;
+&lt;hr&gt;
 &lt;p&gt;A distinguishing feature of Comind is that you can share your knowledge graph very easily with friends,
 strangers, enemies, etc. You are free to link to the public thoughts of others, and others
 can do the same with yours. This is a core part of the design of comind, and it&amp;rsquo;s intended to
@@ -216,6 +218,7 @@ tool for collaboration and learning, and I&amp;rsquo;m excited to see how people
 because it is a surprisingly techincal problem, but I think it&amp;rsquo;s a very cool feature and I&amp;rsquo;m excited to
 make it work.&lt;/p&gt;
 &lt;h2 id=&#34;third-a-playground&#34;&gt;Third, a playground&lt;/h2&gt;
+&lt;hr&gt;
 &lt;p&gt;The last part of comind is that it&amp;rsquo;s a playground for me, for my friends, for generative models, for
 machine learning. Do you want to host your own comind? By all means.&lt;/p&gt;
 &lt;p&gt;Most importantly, it is a place for the world to be weird. I&amp;rsquo;m a millenial. I grew up on the internet,
