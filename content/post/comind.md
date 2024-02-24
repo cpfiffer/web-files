@@ -117,7 +117,12 @@ When you type a new thought or select an existing one, you link the new/selected
 top of mind. This places the thought at the top of the screen. The old top of mind scoots up
 a bit to make room. We place greater weight on the current top of mind, but the older top
 of mind thoughts help contextualize the current top of mind so we can provide more relevant 
-stuff. 
+stuff.
+
+I'll draw a few doodles as we go along. I currently hate the UI as implemented, so doodles
+abstract a bit away from that and just communicate the core ideas. They are not good doodles, forgive me.
+
+![](/comind/tom.png)
 
 Each time the top of mind is updated, I show you every thought that you might be interested in adding
 to your top of mind. This is a combination of thoughts that are linked to the current top of mind,
@@ -132,6 +137,14 @@ delightful part of thinkyspace where I'm reflecting on something I haven't thoug
 Comind tends towards "centrality", where thoughts lead towards larger, useful, topical, or funny/weird
 thoughts.
 
+Understanding your knowledge graph is relatively straightforward. Any time you're looking at one or more
+thoughts, I can extract the underlying graph structure, feed it into various language models, and tell
+you whatever you want to know about what you're currently thinking about. I can provide summaries,
+related thoughts, information about the topic, etc. I can also provide information about the thoughts
+themselves, like when they were created, who created them, how popular they are, etc. Lots of room
+to tinker there and I still don't know the full extent of how to demonstrate your knowledge to you,
+in part because there are so __many__ cool things to do.
+
 We also have some tooling to link thoughts to groups of thoughts, which I call concepts. Concepts
 are similar to hashtags that are created dynamically, and they are used to link thoughts together.
 Concepts might include things like "cooking", "category theory", "funny", "sad", "politics", etc.
@@ -139,6 +152,8 @@ These are all dynamically generated from the entire corpus of thoughts (across a
 at all times, and they are used to help you find thoughts that are relevant to your current 
 top of mind once you've linked a thought to a concept. Once you've linked to a concept, we get an additional 
 set of information about what would be relevant to your knowledge graph.
+
+![](/comind/concept-linking.png)
 
 This is useful because concepts come to life. Concepts can talk back to you and summarize the current 
 discussion within the concept, as well as provide useful, customized information that relates every thought
@@ -162,6 +177,9 @@ their thoughts can be linked to. I provide a simple and clean text-based interfa
 can navigate reasonably well (with some effort currently, as my structured text generation tooling is
 not yet complete). You can talk to them, they can show up unprompted and talk to you.
 
+![](/comind/concept-talk.png)
+
+
 {{% marginnote abc %}}
 The "cominds as users" thing has bitten me in the ass a few times when they all try to talk to each other.
 I call these comind cascades where it's kind of hard to stop them from continuously asking each other what
@@ -184,7 +202,18 @@ help people internalize information that others provide.
 
 This is a core part of the design of comind, and one of it's distinguishing features. Most 
 knowledge graphs are private, and I think that's a mistake. I think that the best way to
-learn is to learn from others, and the best way to learn from others is to see how they think.
+learn is to learn from others, and the best way to learn from others is to see how they think. 
+
+The way this works is basically the same as how you link and talk to your own thoughts.
+If you stick something in your top of mind, you are shown not just your own thoughts
+but also potentially related thoughts from others.
+
+Take this example, where my brother Quinlan and I are sharing some thoughts. He types thought E
+into his top of mind, and is recommended thought B, which I wrote. If he links thought B to his
+top of mind, his brain now has access to B _and_ my other thought A, because A and B are linked.
+
+![](/comind/social.png)
+
 
 Comind in some sense resembles a mixture between twitter, a wiki, and a group chat. You can have
 live discussions with people by linking thoughts together (conversation is knowledge, after all),
@@ -198,6 +227,20 @@ are being used elsewhere.
 The last part of this is that you can have "shared tops of mind", which is something like a group chat.
 You invite people to share a top of mind, and all users can add things to the top of mind. If you just
 want to chat, this is akin to everyone just typing into their boxes.
+
+Take this example, where my mom Lynnette and my brother Quinlan are sharing a top of mind. I type something like
+
+> Mom look at this stupid house.
+
+That goes into the shared top of mind, and everyone can see it. In my stream, I'm offered a few pictures
+of houses that are in my knowledge graph or that are popular, and I can link them to the shared top of mind. 
+In this case, I just took a picture, and so I click that and add it to the shared top of mind as well.
+
+Mom and Q can then respond to my thoughts, and we can have a conversation about the stupid house. Mom loves the house,
+so now the knowledge graph knows that mom has preferences for houses with a certain style. Quinlan opts out of the
+discussion so now the knowledge graph knows that he doesn't love his family.
+
+![](/comind/social-tom.png)
 
 The real power of shared tops of mind is that you can use it to collaborate on a knowledge graph. Any time
 the top of mind is updated, everyone in the shared top of mind has access to thoughts that relate
