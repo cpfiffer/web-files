@@ -165,6 +165,9 @@ top of mind. This places the thought at the top of the screen. The old top of mi
 a bit to make room. We place greater weight on the current top of mind, but the older top
 of mind thoughts help contextualize the current top of mind so we can provide more relevant
 stuff.</p>
+<p>I&rsquo;ll draw a few doodles as we go along. I currently hate the UI as implemented, so doodles
+abstract a bit away from that and just communicate the core ideas. They are not good doodles, forgive me.</p>
+<p><img src="/comind/tom.png" alt=""></p>
 <p>Each time the top of mind is updated, I show you every thought that you might be interested in adding
 to your top of mind. This is a combination of thoughts that are linked to the current top of mind,
 popular thoughts that are commonly linked to, thoughts from friends, thoughts provided by language
@@ -176,6 +179,13 @@ on old thoughts that are weird, informative, or funny, and I&rsquo;ll often find
 delightful part of thinkyspace where I&rsquo;m reflecting on something I haven&rsquo;t thought about in a while.
 Comind tends towards &ldquo;centrality&rdquo;, where thoughts lead towards larger, useful, topical, or funny/weird
 thoughts.</p>
+<p>Understanding your knowledge graph is relatively straightforward. Any time you&rsquo;re looking at one or more
+thoughts, I can extract the underlying graph structure, feed it into various language models, and tell
+you whatever you want to know about what you&rsquo;re currently thinking about. I can provide summaries,
+related thoughts, information about the topic, etc. I can also provide information about the thoughts
+themselves, like when they were created, who created them, how popular they are, etc. Lots of room
+to tinker there and I still don&rsquo;t know the full extent of how to demonstrate your knowledge to you,
+in part because there are so <strong>many</strong> cool things to do.</p>
 <p>We also have some tooling to link thoughts to groups of thoughts, which I call concepts. Concepts
 are similar to hashtags that are created dynamically, and they are used to link thoughts together.
 Concepts might include things like &ldquo;cooking&rdquo;, &ldquo;category theory&rdquo;, &ldquo;funny&rdquo;, &ldquo;sad&rdquo;, &ldquo;politics&rdquo;, etc.
@@ -183,6 +193,7 @@ These are all dynamically generated from the entire corpus of thoughts (across a
 at all times, and they are used to help you find thoughts that are relevant to your current
 top of mind once you&rsquo;ve linked a thought to a concept. Once you&rsquo;ve linked to a concept, we get an additional
 set of information about what would be relevant to your knowledge graph.</p>
+<p><img src="/comind/concept-linking.png" alt=""></p>
 <p>This is useful because concepts come to life. Concepts can talk back to you and summarize the current
 discussion within the concept, as well as provide useful, customized information that relates every thought
 in the concept to what you&rsquo;re currently thinking about.</p>
@@ -200,6 +211,7 @@ much like noted swearer Gordon Ramsay.</p>
 their thoughts can be linked to. I provide a simple and clean text-based interface that a language model
 can navigate reasonably well (with some effort currently, as my structured text generation tooling is
 not yet complete). You can talk to them, they can show up unprompted and talk to you.</p>
+<p><img src="/comind/concept-talk.png" alt=""></p>
 <p><label for="abc" class="margin-toggle">⊕</label>
 <input type="checkbox" id="abc" class="margin-toggle"/>
 <span class="marginnote">
@@ -220,6 +232,13 @@ help people internalize information that others provide.</p>
 <p>This is a core part of the design of comind, and one of it&rsquo;s distinguishing features. Most
 knowledge graphs are private, and I think that&rsquo;s a mistake. I think that the best way to
 learn is to learn from others, and the best way to learn from others is to see how they think.</p>
+<p>The way this works is basically the same as how you link and talk to your own thoughts.
+If you stick something in your top of mind, you are shown not just your own thoughts
+but also potentially related thoughts from others.</p>
+<p>Take this example, where my brother Quinlan and I are sharing some thoughts. He types thought E
+into his top of mind, and is recommended thought B, which I wrote. If he links thought B to his
+top of mind, his brain now has access to B <em>and</em> my other thought A, because A and B are linked.</p>
+<p><img src="/comind/social.png" alt=""></p>
 <p>Comind in some sense resembles a mixture between twitter, a wiki, and a group chat. You can have
 live discussions with people by linking thoughts together (conversation is knowledge, after all),
 comment on popular events, and generally interact with the thoughts of others in a way
@@ -230,6 +249,17 @@ are being used elsewhere.</p>
 <p>The last part of this is that you can have &ldquo;shared tops of mind&rdquo;, which is something like a group chat.
 You invite people to share a top of mind, and all users can add things to the top of mind. If you just
 want to chat, this is akin to everyone just typing into their boxes.</p>
+<p>Take this example, where my mom Lynnette and my brother Quinlan are sharing a top of mind. I type something like</p>
+<blockquote>
+<p>Mom look at this stupid house.</p>
+</blockquote>
+<p>That goes into the shared top of mind, and everyone can see it. In my stream, I&rsquo;m offered a few pictures
+of houses that are in my knowledge graph or that are popular, and I can link them to the shared top of mind.
+In this case, I just took a picture, and so I click that and add it to the shared top of mind as well.</p>
+<p>Mom and Q can then respond to my thoughts, and we can have a conversation about the stupid house. Mom loves the house,
+so now the knowledge graph knows that mom has preferences for houses with a certain style. Quinlan opts out of the
+discussion so now the knowledge graph knows that he doesn&rsquo;t love his family.</p>
+<p><img src="/comind/social-tom.png" alt=""></p>
 <p>The real power of shared tops of mind is that you can use it to collaborate on a knowledge graph. Any time
 the top of mind is updated, everyone in the shared top of mind has access to thoughts that relate
 the the shared top of mind to their own personal knowledge graphs &ndash; you and I can each bring our
