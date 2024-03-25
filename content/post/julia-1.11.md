@@ -125,12 +125,14 @@ I'm curious to see how the community will use this stuff. I'm not sure it's imme
 
 ## The `:greedy` thread scheduler
 
-You can now use a greedy thread scheduler, which greedily works on iterator elements as they are produced.
+You can now use a greedy thread scheduler, which greedily works on iterator elements as they are produced. Greedy threads simply take the next available task in an iterator without regard to how hard the task is, how many threads there are, etc. If you have a lot of tasks that are all about the same difficulty, greedy scheduling can be a good choice. 
 
 ```julia
-Threads.@threads for i in 1:100
+Threads.@threads :greedy for i in 1:100
     println(i)
 end
 ```
+
+Julia has the other scheduling options `:dynamic` and `:static`, which are more sophisticated and can be more efficient in some cases. `:static` will partition the iterator into chunks and assign each chunk to a thread, while `:dynamic` will dynamically allocate small chunks to threads. `:dynamic` is the default scheduler, but I suspect `:greedy` will be useful in some repeated, small multithreading tasks.
 
 The [PR](https://github.com/JuliaLang/julia/pull/52096) is here. Thanks to [Valentin Bogad/Sukera](https://seelengrab.github.io/about/).
